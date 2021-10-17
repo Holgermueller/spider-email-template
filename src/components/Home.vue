@@ -1,14 +1,18 @@
 <template>
   <div id="home">
-    <h1>
-      this is the home page.
-    </h1>
+    <LoginRegisterCard />
   </div>
 </template>
 
 <script>
+import LoginRegisterCard from "./HomeComponents/LogReg.vue";
+
 export default {
   name: "Home",
+
+  components: {
+    LoginRegisterCard,
+  },
 
   data: () => ({}),
 };
