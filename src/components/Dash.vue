@@ -8,7 +8,7 @@
           <RecipeDisplay />
         </v-col>
         <v-col>
-          <GroceryListDisplay />
+          <ThisWeeksRecipes />
         </v-col>
       </v-row>
     </v-container>
@@ -18,7 +18,7 @@
 <script>
 import AddRecipeDialog from "./DashComponents/AddRecipe.vue";
 import RecipeDisplay from "./DashComponents/RecipeDisplay.vue";
-import GroceryListDisplay from "./DashComponents/GroceryList.vue";
+import ThisWeeksRecipes from "./DashComponents/ThisWeeksRecipes.vue";
 
 export default {
   name: "Dashboard",
@@ -26,7 +26,7 @@ export default {
   components: {
     AddRecipeDialog,
     RecipeDisplay,
-    GroceryListDisplay,
+    ThisWeeksRecipes,
   },
 
   data: () => ({}),

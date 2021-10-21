@@ -12,12 +12,24 @@
     <v-card-text>
       List here
     </v-card-text>
+
+    <v-divider></v-divider>
+
+    <v-card-actions>
+      <ClearAllRecipesDialog class="clear-button" />
+    </v-card-actions>
   </v-card>
 </template>
 
 <script>
+import ClearAllRecipesDialog from "./ClearAllRecipes.vue";
+
 export default {
   name: "GroceryListDisplay",
+
+  components: {
+    ClearAllRecipesDialog,
+  },
 
   data: () => ({}),
 };

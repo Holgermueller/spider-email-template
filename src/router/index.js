@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../components/Home";
 import Dash from "../components/Dash";
-import GroceryList from "../components/GroceryList";
+import GroceryList from "../components/GroceryListPage";
 
 Vue.use(VueRouter);
 
