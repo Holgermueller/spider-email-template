@@ -1,10 +1,17 @@
 <template>
   <v-card>
     <v-card-title>
-      Grocery List Here
+      This week's meals
+      <v-spacer></v-spacer>
+      <v-chip color="primary" to="/groceryList">
+        Get grocery list
+        <v-icon right>mdi-arrow-right</v-icon>
+      </v-chip>
     </v-card-title>
 
-    <v-card-text> </v-card-text>
+    <v-card-text>
+      List here
+    </v-card-text>
   </v-card>
 </template>
 
