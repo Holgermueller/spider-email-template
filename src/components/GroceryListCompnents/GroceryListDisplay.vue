@@ -9,16 +9,27 @@
     <v-divider></v-divider>
 
     <v-card-actions>
-      <v-btn>Back</v-btn>
+      <v-btn elevation="0" dark color="green" to="/dash">
+        <v-icon left>
+          mdi-arrow-left
+        </v-icon>
+        Back</v-btn
+      >
       <v-spacer></v-spacer>
-      <v-btn>Clear All</v-btn>
+      <ClearGroceryListDialog />
     </v-card-actions>
   </v-card>
 </template>
 
 <script>
+import ClearGroceryListDialog from "./ClearGroceryList.vue";
+
 export default {
   name: "GroceryListDisplay",
+
+  components: {
+    ClearGroceryListDialog,
+  },
 
   data: () => ({}),
 };
