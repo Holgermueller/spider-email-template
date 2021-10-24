@@ -17,9 +17,15 @@
         </v-card-text>
 
         <v-card-actions>
-          <v-btn>Cancel</v-btn>
+          <v-btn elevation="0" dark color="red" @click.prevent="closeDialog">
+            <v-icon left>mdi-cancel</v-icon>
+            Cancel</v-btn
+          >
           <v-spacer></v-spacer>
-          <v-btn>Submit</v-btn>
+          <v-btn elevation="0" dark color="primary" @click.prevent="addRecipe">
+            <v-icon left>mdi-check</v-icon>
+            Submit</v-btn
+          >
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -37,9 +43,15 @@ export default {
   methods: {
     clearForm() {},
 
-    closeDialog() {},
+    closeDialog() {
+      this.dialog = false;
+    },
 
-    addRecipe() {},
+    addRecipe() {
+      console.log("recipe added");
+
+      this.closeDialog();
+    },
   },
 };
 </script>
