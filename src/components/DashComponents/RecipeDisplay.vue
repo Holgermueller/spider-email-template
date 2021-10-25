@@ -4,13 +4,21 @@
       Recipes here
     </v-card-title>
 
-    <v-card-text></v-card-text>
+    <v-card-text>
+      {{ recipes }}
+    </v-card-text>
   </v-card>
 </template>
 
 <script>
 export default {
   name: "RecipeDisplay",
+
+  computed: {
+    recipes() {
+      return this.$store.getters.recipes;
+    },
+  },
 
   data: () => ({}),
 };

@@ -1,6 +1,13 @@
 export default {
   state: {
-    recipes: [],
+    recipes: [
+      {
+        name: "tacos",
+      },
+      {
+        name: "pizza",
+      },
+    ],
   },
 
   mutations: {},
