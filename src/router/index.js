@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../components/Home";
 import Dash from "../components/Dash";
 import GroceryList from "../components/GroceryListPage";
+import AllRecipes from "../components/AllRecipes";
 
 Vue.use(VueRouter);
 
@@ -26,6 +27,12 @@ let router = new VueRouter({
       path: "/groceryList",
       name: "GroceryList",
       component: GroceryList,
+    },
+
+    {
+      path: "/allRecipes",
+      name: "AllRecipes",
+      component: AllRecipes,
     },
   ],
 });
