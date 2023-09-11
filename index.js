@@ -22,3 +22,14 @@ const yesGo = () => {
 
   currentClass = sideToShow;
 };
+
+const confirm = () => {
+  console.log("click");
+  const sideToShow = document.getElementById("cube");
+  if (currentClass === "show-right") {
+    cube.classList.remove(currentClass);
+  }
+  sideToShow.classList.add("show-back");
+
+  currentClass = sideToShow;
+};
