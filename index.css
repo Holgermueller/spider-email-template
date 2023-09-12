@@ -1,7 +1,7 @@
 :root {
-  --mainColor: #f8f8ff;
+  --mainColor: #87ceeb;
   --neutralColor: #fff;
-  --accentColor: skyblue;
+  --accentColor: black;
 }
 
 body,
@@ -9,31 +9,23 @@ html {
   padding: 0;
   margin: 0;
   max-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 h1,
 h2 {
-  text-align: center;
   width: max-content;
   margin: auto;
+  color: var(--accentColor);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 300;
-  background-color: #008080;
-  color: var(--neutralColor);
+  background-color: rgba(135, 206, 235, 0.5);
   padding: 8px;
   border-radius: 5px;
-}
-
-p {
-  text-align: center;
-}
-
-.no-response-text {
-  margin: 8px;
-  line-height: 2rem;
 }
 
 h2 {
@@ -74,14 +66,17 @@ h2 {
   height: 100%;
   line-height: 100px;
   color: var(--neutralColor);
-  text-align: center;
   border: 2px solid black;
 }
 
 .cube-face-front {
-  background: var(--neutralColor);
+  background-image: url(./images/pexels-secret-garden-931179.jpg);
+  background-size: cover;
   color: #008080;
   transform: rotateY(0deg) translateZ(250px);
+  flex-direction: grid;
+  place-items: center;
+  align-content: center;
 }
 
 .cube-face-right {
@@ -110,16 +105,33 @@ h2 {
   transform: translateZ(-250px) rotateY(-180deg);
 }
 
+.front-text-container {
+  margin: 0 auto;
+  border-radius: 5px;
+  width: max-content;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+strong {
+  color: var(--mainColor);
+}
+
+.no-response-text {
+  line-height: 3rem;
+  font-size: 1.25rem;
+}
+
 button {
   width: 25%;
   margin: 4px auto;
   font-size: medium;
   padding: 8px;
   border-radius: 5px;
-  background-color: #008080;
+  background-color: var(--mainColor);
   color: var(--neutralColor);
-  border: 1px solid var(--neutralColor);
   font-size: 1.25rem;
+  border: none;
 }
 
 button:hover {
