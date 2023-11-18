@@ -66,6 +66,7 @@ h2 {
   height: 100%;
   line-height: 100px;
   color: var(--neutralColor);
+  border-radius: 5px;
 }
 
 .cube-face-front {
