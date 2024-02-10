@@ -1,50 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
-    <title>Spinvitation</title>
+    <meta name="color-scheme" content="light dark" />
+    <meta name="supported-color-schemes" content="light dark" />
+    <style type="text/css">
+      :root {
+        color-scheme: light dark;
+        supported-color-schemes: light dark;
+      }
+      body {
+        background: #2d2d2d !important;
+        color: #f0f0f0 !important;
+      }
+    </style>
+
+    <title>HTML Email Template Project</title>
   </head>
   <body>
-    <section class="cube-section">
-      <div class="scene">
-        <div class="cube" id="cube">
-          <div class="left cube-face cube-face-left">
-            <h2>That's such a shame.</h2>
-            <p class="no-response-text">
-              We're so disappointed we won't be seeing you. We do realize that
-              you might have other, conflicting engagements. Know that you will
-              be missed, and we hope to see another time.
-            </p>
-          </div>
+    <center style="table-layout: fixed">
+      hello
 
-          <div class="front cube-face cube-face-front">
-            <div class="front-text-container">
-              <p class="front-text">You're invited to the wedding of</p>
-              <h1>John Doe and Jane doe</h1>
-              <div class="response-container">
-                <h2>Will you be attending?</h2>
-                <button id="yes" onclick="yesGo()">Yes</button>
-                <button id="no" onclick="noGo()">No</button>
-              </div>
-              <strong> Please RSVP by xx.x.xxxx! </strong>
-            </div>
-          </div>
-
-          <div class="right cube-face cube-face-right">
-            <p>We're so excited you'll be attending our special day!</p>
-            <p>Will you be bringing a special someone with you?</p>
-
-            <p>What entree would you like?</p>
-
-            <button id="confirm" onclick="confirm()">Confirm</button>
-          </div>
-
-          <div class="back cube-face cube-face-back">this is the back</div>
-        </div>
-      </div>
-    </section>
+      <table
+        align="center"
+        style="
+          border-spacing: 0;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          max-width: 600px;
+        "
+      >
+        <tr>
+          <td style="padding: 0">
+            <table width="100%" style="border-spacing: 0">
+              <tr>
+                <td class="two-columns" style="padding: 0"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
   </body>
 </html>
