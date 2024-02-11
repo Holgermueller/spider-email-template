@@ -17,7 +17,6 @@
       body {
         margin: 0;
         background: #2d2d2d !important;
-        color: #f0f0f0 !important;
       }
       table {
         border-spacing: 0;
@@ -50,8 +49,47 @@
         font-weight: bolder;
         text-transform: uppercase;
       }
+      .button {
+        background-color: #4980d2;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .two-columns {
+        text-align: center;
+        font-size: 0;
+        padding: 40px 0;
+      }
+      .two-columns .column {
+        width: 100%;
+        max-width: 300px;
+        display: inline-block;
+        vertical-align: top;
+      }
+      .two-columns .padding {
+        padding: 20px;
+      }
+      .two-columns .content {
+        text-align: left;
+        font-size: 15px;
+        line-height: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: #4980d2;
+      }
 
       @media screen and (max-width: 600px) {
+        .two-columns .content img {
+          width: 300px !important;
+          max-width: 300px !important;
+        }
+        .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
       }
     </style>
 
@@ -71,9 +109,15 @@
                     text-align: center;
                   "
                 >
-                  <i class="fa-brands fa-instagram fa-xl"></i>
-                  <i class="fa-brands fa-youtube fa-xl"></i>
-                  <i class="fa-brands fa-tiktok fa-xl"></i>
+                  <a href="#" style="color: #fff"
+                    ><i class="fa-brands fa-instagram fa-xl"></i
+                  ></a>
+                  <a href="#" style="color: #fff"
+                    ><i class="fa-brands fa-youtube fa-xl"></i
+                  ></a>
+                  <a href="#" style="color: #fff"
+                    ><i class="fa-brands fa-tiktok fa-xl"></i
+                  ></a>
                 </td>
               </tr>
             </table>
@@ -87,9 +131,171 @@
                 <td style="text-align: center; padding: 10px">
                   <a href="#" title="logo" class="logo" style="color: #4980d2">
                     <i class="fa-solid fa-spider" style="margin-right: 4px"></i
-                    >The Spider-Man</a
+                    >The Spider Man</a
                   >
                 </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <a href="#"
+              ><img
+                src="images/pexels-pixabay-40795.jpg"
+                alt="Banner"
+                width="600"
+                style="max-width: 100%"
+            /></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding-bottom: 40px">
+            <table width="100%">
+              <tr>
+                <td style="text-align: center; padding: 15px">
+                  <p style="font-size: 20px; font-weight: bold">
+                    Spider Care Services
+                  </p>
+                  <p
+                    style="
+                      font-size: 15px;
+                      line-height: 23px;
+                      padding: 5px 0 15px;
+                    "
+                  >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                  <a href="#" class="button">Get a Quote</a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td height="5px" style="background-color: #4980d2"></td>
+        </tr>
+
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td class="two-columns">
+                  <table class="column">
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+                          <tr>
+                            <td>
+                              <a href="#"
+                                ><img
+                                  src="images/pexels-pixabay-257554.jpg"
+                                  alt=""
+                                  width="260px"
+                                  style="max-width: 260px"
+                              /></a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <table class="column">
+                    <tr>
+                      <td class="padding">
+                        <table class="content">
+                          <tr>
+                            <td>
+                              <p style="font-size: 17px; font-weight: bold">
+                                Special Spider Care
+                              </p>
+                              <p style="padding-bottom: 15px">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum.
+                              </p>
+                              <a href="#" class="button">Learn More</a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <table width="100%">
+              <tr>
+                <td
+                  style="
+                    text-align: center;
+                    background-color: #4980d2;
+                    color: #ffffff;
+                    padding: 15px;
+                    font-size: 18px;
+                  "
+                >
+                  <p style="font-weight: bold">
+                    <q>Truly a unique service...</q>
+                  </p>
+                  <p>-Peter P.</p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="background-color: #efefef">
+            <table width="100%">
+              <tr>
+                <td style="padding: 30px 10px; text-align: center">
+                  <a
+                    href="#"
+                    title="logo"
+                    width="160"
+                    style="
+                      color: #4980d2;
+                      text-decoration: none;
+                      font-size: 1.5rem;
+                    "
+                  >
+                    <i class="fa-solid fa-spider" style="margin-right: 4px"></i
+                    >The Spider Man</a
+                  >
+                  <p>The Spider Man HTML Email</p>
+                  <p>123 Street Ave., City, State Zipcode</p>
+                  <p><a href="mailto:email@example.com">Email@email.com</a></p>
+                  <p><a href="tel:18888888888">1-888-888-8888</a></p>
+                  <p style="font-size: 13px"><a href="#">UNSUBSCRIBE</a></p>
+                </td>
+              </tr>
+
+              <tr>
+                <td height="10" style="background-color: #4980d2"></td>
               </tr>
             </table>
           </td>
